@@ -58,6 +58,10 @@
       white-space: nowrap;
     }
 
+    .mobile-break {
+      display: none;
+    }
+
     .links {
       width: 100%;
       display: flex;
@@ -76,7 +80,6 @@
       opacity: 0.6;
     }
 
-    /* Mobile */
     @media (max-width: 600px) {
       .inner {
         padding: 40px 32px;
@@ -98,6 +101,10 @@
         white-space: normal;
       }
 
+      .mobile-break {
+        display: block;
+      }
+
       .links {
         flex-direction: column;
         align-items: center;
@@ -110,8 +117,8 @@
 <body>
   <div class="inner">
     <div class="top">
-      <div class="name">Gianluca Kuka Pirotta</div>
-      <div class="role">Graphic Designer &amp; Illustrator</div>
+      <div class="name">Gianluca Kuka<br class="mobile-break">Pirotta</div>
+      <div class="role">Graphic Designer<br class="mobile-break">&amp; Illustrator</div>
     </div>
     <div class="links">
       <a href="https://www.behance.net/lieve" target="_blank" rel="noopener">Works</a>
