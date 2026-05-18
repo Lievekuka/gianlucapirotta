@@ -58,8 +58,12 @@
       white-space: nowrap;
     }
 
-    .mobile-break {
+    .mobile-only {
       display: none;
+    }
+
+    .desktop-only {
+      display: inline;
     }
 
     .links {
@@ -101,7 +105,11 @@
         white-space: normal;
       }
 
-      .mobile-break {
+      .desktop-only {
+        display: none;
+      }
+
+      .mobile-only {
         display: block;
       }
 
@@ -117,8 +125,16 @@
 <body>
   <div class="inner">
     <div class="top">
-      <div class="name">Gianluca Kuka<br class="mobile-break">Pirotta</div>
-      <div class="role">Graphic Designer<br class="mobile-break">&amp; Illustrator</div>
+      <div class="name">
+        <span class="desktop-only">Gianluca Kuka Pirotta</span>
+        <span class="mobile-only">Gianluca Kuka</span>
+        <span class="mobile-only">Pirotta</span>
+      </div>
+      <div class="role">
+        <span class="desktop-only">Graphic Designer &amp; Illustrator</span>
+        <span class="mobile-only">Graphic Designer</span>
+        <span class="mobile-only">&amp; Illustrator</span>
+      </div>
     </div>
     <div class="links">
       <a href="https://www.behance.net/lieve" target="_blank" rel="noopener">Works</a>
